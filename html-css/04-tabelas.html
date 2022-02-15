@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>HTML - Allan Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- RESET -->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" type="text/css" href="./css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/tabelas.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Curso Front-end</h2>
+    </header>
+    <section>
+      <nav>
+				<h3>Aulas</h3>
+				<ul class="navegacao">
+					<li><a href="homepage.html">Allan</a></li>
+					<li><a href="modulo-07.html">Módulo 07</a></li>
+					<li id="primeiro-link"><a href="01-introducao.html">Introdução</a></li>
+					<li><a href="02-listas-e-links.html">Listas e Links</a></li>
+					<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+					<li><a href="04-tabelas.html">Tabelas</a></li>
+					<li><a href="05-layouts.html">Layouts</a></li>
+					<li><a href="06-formularios.html">Formulários</a></li>
+				</ul>
+
+				<h3>Redes Sociais</h3>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/allanhirose/">LinkedIn</a></li>
+				</ul>
+			</nav>
+
+      <article>
+        <h1>Tabelas</h1>
+
+        <table border="1" width="100%">
+          <thead>
+            <tr>
+              <th>Coluna 1</th>
+              <th>Coluna 2</th>
+              <th>Coluna 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr align="center">
+              <td>1A</td>
+              <td>1B</td>
+              <td>1C</td>
+            </tr>
+            <tr align="right">
+              <td>2A</td>
+              <td>2B</td>
+              <td>2C</td>
+            </tr>
+            <tr>
+              <td>3A</td>
+              <td colspan="2">3BC</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Rodapé da tabela</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <h2>Tabela como layout</h2>
+
+        <table width="600">
+          <tr height="90">
+            <td colspan="4" bgcolor="#BBCCEE" align="center">Cabeçalho</td>
+          </tr>
+          <tr height="300">
+            <td width="20" bgcolor="#0000FF"></td>
+            <td width="60%" bgcolor="#DDDDDD">
+              <h2>Título</h2>
+              <p>fdajfkdj jfdjfodsapodhgdo odihofdfhsdooi</p>
+            </td>
+            <td bgcolor="#EEEEEE">Coluna 2</td>
+            <td width="20" bgcolor="#0000FF"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#FF0000" colspan="4" align="center">Rodapé</td>
+          </tr>
+        </table>
+      </article>
+    </section>
+
+    <footer>
+      <p>Desenvolvido por Allan</p>
+    </footer>
+  </body>
+</html>
