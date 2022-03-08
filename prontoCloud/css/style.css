@@ -55,6 +55,7 @@ h1 {
     color: #385874;
     font-weight: 600;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 h2 {
@@ -62,6 +63,7 @@ h2 {
     color: #385874;
     font-weight: 600;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 h3 {
@@ -69,6 +71,7 @@ h3 {
     color: #5f7a91;
     font-weight: 600;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 h4, h5, h6 {
@@ -76,6 +79,7 @@ h4, h5, h6 {
     color: #5f7a91;
     font-weight: 600;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 ol, ul {
@@ -101,4 +105,8 @@ footer p {
 
 footer small {
     font-size: .6rem;
+}
+
+.cog-branding--minimal {
+    display: none !important;
 }
