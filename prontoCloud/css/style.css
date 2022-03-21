@@ -27,8 +27,8 @@ nav {
 
 nav ul {
     list-style: none;
-    /*position: sticky;
-    top: 0;*/
+    position: sticky;
+    top: 0;
     padding: 20px;
 }
 
@@ -119,4 +119,17 @@ footer small {
 
 .form-section h1, .form-section p {
     color: white;
+}
+
+.😉.cog-cognito.cog-form.cog-1.is-default.cog-cognito--styled.cog-form--dark-background.cog-form--transparent-background, .cog-form__container {
+    max-width: 100% !important;
+}
+
+@media (max-width: 1267px) {
+    nav ul li:first-child {
+        display: none;
+    }
+    nav ul {
+        padding-left: 0;
+    }
 }
