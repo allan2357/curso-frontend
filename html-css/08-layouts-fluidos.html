@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/layouts-fluidos.css">
-    <title>Layouts Fluidos</title>
-</head>
+    <title>HTML - Allan Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- RESET -->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" type="text/css" href="./css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="./css/tabelas.css" />
+  </head>
 <body>
 
-    <h1>Layouts Fluidos</h1>
-    <p>Adapta a largura da tela</p>
+    <header>
+      <h2>Curso Front-end</h2>
+    </header>
 
     <section> 
-        <h2>100% width / largura</h2>
+        <nav>
+            <h3>Aulas</h3>
+            <ul class="navegacao">
+                <li><a href="homepage.html">Allan</a></li>
+                <li><a href="01-introducao.html">Introdução</a></li>
+                <li><a href="02-listas-e-links.html">Listas e Links</a></li>
+                <li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+                <li><a href="04-tabelas.html">Tabelas</a></li>
+                <li><a href="05-layouts.html">Layouts</a></li>
+                <li><a href="06-formularios.html">Formulários</a></li>
+                <li><a href="07-fundamentos-css.html">Fundamentos CSS</a></li>
+                <li><a href="10-layouts-web.html">Layouts Web</a></li>
+            </ul>
 
-        <div class="width-100">
+            <h3>Redes Sociais</h3>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/allanhirose/" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </nav>
 
-            <nav>
-                navegação
-            </nav>
-            <article>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, id doloremque. Quibusdam, odit enim porro beatae itaque dolore velit voluptas vero soluta reiciendis accusamus quod accusantium nesciunt nobis fuga earum.
+        <article>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, id doloremque. Quibusdam, odit enim porro beatae itaque dolore velit voluptas vero soluta reiciendis accusamus quod accusantium nesciunt nobis fuga earum.
 
-                <div class="fixed-width">
-                    largura fixa
-                </div>
+            <div class="fixed-width">
+                largura fixa
+            </div>
 
 
-                <div class="background">
-                    Repetir imagem na horizontal
-                </div>
+            <div class="background">
+                Repetir imagem na horizontal
+            </div>
 
-                <div>
+            <div>
 
-                    <picture>
-                        <source media="(min-width: 280px)" srcset="./images/coffee-sm.jpg">
-                        <source media="(min-width: 600px)" srcset="./images/coffee-square.jpg">
-                        <img srcset="./images/coffee.jpg" alt="Café">
-                    </picture>
-                    
-                </div>
+                <picture>
+                    <source media="(min-width: 280px)" srcset="./images/coffee-sm.jpg">
+                    <source media="(min-width: 600px)" srcset="./images/coffee-square.jpg">
+                    <img srcset="./images/coffee.jpg" alt="Café">
+                </picture>
+                
+            </div>
 
-            </article>
-
-        </div>
+        </article>
 
     
     </section>
