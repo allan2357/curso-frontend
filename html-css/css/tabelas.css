@@ -49,3 +49,7 @@ table tr:nth-child(2) th {
 .table-container tfoot td {
 	font-weight: bold;
 }
+
+.of-x {
+	overflow-x: auto;
+}
