@@ -122,7 +122,7 @@ footer small {
 }
 
 .😉.cog-cognito.cog-form.cog-1.is-default.cog-cognito--styled.cog-form--dark-background.cog-form--transparent-background, .cog-form__container {
-    max-width: 100% !important;
+    max-width: 500px !important;
 }
 
 @media (max-width: 1267px) {
@@ -133,3 +133,4 @@ footer small {
         padding-left: 0;
     }
 }
+
