@@ -140,7 +140,7 @@ section#banner {
     width: 100%;
     height: 60vh;
     padding: 25px;
-    box-shadow: inset 0 65vh 60vh -15vh rgb(255 255 255 / 83%);
+    box-shadow: inset 0 99vh 94vh -40vh rgb(255 255 255 / 83%);
 }
 
 section#banner > .container {
