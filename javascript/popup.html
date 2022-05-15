@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Automatic Popup</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+
+        <style media="screen">
+            *,
+            *:before,
+            *:after {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: #0855ae;
+            }
+            .popup-container {
+                display: none;
+                padding: 12px;
+                width: 100vw;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            .popup-container::before {
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: black;
+                opacity: .5;
+                z-index: 1000000;
+                content: '';
+            }
+            .popup {
+                background-color: #ffffff;
+                width: 800px;
+                max-width: 100%;
+                border-radius: 3px;
+                overflow: hidden;
+                position: relative;
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+                z-index: 1000001;
+                opacity: 1 !important;
+            }
+            .popup-columns {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .popup-columns img {
+                width: 40%;
+                aspect-ratio: 320/400;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+            .popup-columns .content {
+                padding: 20px;
+            }
+            .popup button {
+                display: block;
+                font-size: 1rem;
+                color: #ffffff;
+                background: #03549a;
+                border-radius: 100%;
+                width: 1.5rem;
+                height: 1.5rem;
+                border: none;
+                outline: none;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
+            .popup h2 {
+                margin-top: -20px;
+            }
+            .popup p {
+                font-size: 14px;
+                text-align: justify;
+                margin: 20px 0;
+                line-height: 25px;
+            }
+            a {
+                display: block;
+                width: 150px;
+                position: relative;
+                margin: 10px auto;
+                text-align: center;
+                background-color: #0f72e5;
+                border-radius: 20px;
+                color: #ffffff;
+                text-decoration: none;
+                padding: 8px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="popup-container">
+            <div class="popup">
+                <button id="close">&times;</button>
+                <div class="popup-columns">
+                        <img src="https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=581&q=80 581w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=881&q=80 881w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1162&q=80 1162w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1181&q=80 1181w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1481&q=80 1481w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1762&q=80 1762w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1781&q=80 1781w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2081&q=80 2081w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2362&q=80 2362w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2381&q=80 2381w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2681&q=80 2681w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2962&q=80 2962w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2981&q=80 2981w, https://images.unsplash.com/photo-1567855354833-ac2c4f967b0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3182&q=80 3182w" alt="">
+                    
+                    <div class="content">
+                        <h5>receba freebies exclusivos assinando nossa newsletter</h5>
+                        <p>não fique de fora do nosso clubinho! enviamos freebies exclusivos para nossos assinantes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+        window.addEventListener("load", function () {
+            setTimeout(function open(event) {
+            document.querySelector(".popup-container").style.display = "flex";
+            }, 2000);
+        });
+
+        document.querySelector("#close").addEventListener("click", function () {
+            document.querySelector(".popup-container").style.display = "none";
+        });
+        </script>
+    </body>
+</html>
