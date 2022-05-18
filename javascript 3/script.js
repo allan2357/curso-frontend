@@ -56,7 +56,7 @@ function validaCep(element) {
 function validaUf(element) {
   element.addEventListener("change", function (event) {
     event.preventDefault();
-    if (!this.value.match(/[a-z]{2}/i)) {
+    if (!this.value.match(/^[a-z]{2}$/i)) {
       this.classList.add("error");
     } else {
       this.classList.remove("error");
