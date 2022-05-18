@@ -1,0 +1,64 @@
+body{
+    color: #443d4c;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
+    color: #443d4c;
+    text-decoration: none;
+    padding: .5rem;
+    font-weight: 600;
+}
+
+header {
+    background-color: #5eecaa;
+    place-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+section#sobre {
+    background-color: #5eecaa;
+}
+
+.btn {
+    background-color: #5eecaa;
+    border: none;
+    color: #443d4c;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #16bda1;
+}
+
+.btn-success {
+    background-color: #443d4c;
+    color: white;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.produtos {
+    flex-wrap: wrap;
+}
+
+.card {
+    float: left;
+    margin: 5px;
+}
+
+#contato {
+    background-color: #f5ccd3;
+}
+
+#contato .btn:hover {
+    background-color: #312a3a;
+}
