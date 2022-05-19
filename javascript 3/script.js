@@ -23,7 +23,7 @@ function validaEmail(element) {
 function validaTelefone(element) {
   element.addEventListener("change", function (event) {
     event.preventDefault();
-    if (!this.value.match(/^[0-9 \-\(\)]+$/i)) {
+    if (!this.value.match(/^[0-9]{10,11}$/i)) {
       this.classList.add("error");
     } else {
       this.classList.remove("error");
@@ -45,7 +45,7 @@ function validaTexto(element) {
 function validaCep(element) {
   element.addEventListener("change", function (event) {
     event.preventDefault();
-    if (!this.value.match(/[0-9]{5}-[0-9]{3}/)) {
+    if (!this.value.match(/[0-9]{8}/)) {
       this.classList.add("error");
     } else {
       this.classList.remove("error");
