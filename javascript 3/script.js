@@ -76,7 +76,6 @@ function validaObrigatorios(obrigatorios) {
 }
 
 formulario.addEventListener("submit", function (event) {
-  event.preventDefault();
   let erro = false;
   for (let child of campos) {
     if (child.classList.contains("obrigatorio") && child.value == "") {
@@ -84,7 +83,8 @@ formulario.addEventListener("submit", function (event) {
       erro = true;
     }
   }
-  if ((erro = true)) return;
+  if ((erro == true)) return;
+  alert('Cadastro Finalizado!');
 });
 
 validaEmail(email);
